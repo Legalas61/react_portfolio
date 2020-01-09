@@ -1,0 +1,51 @@
+.aboutMy{
+    display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+
+.aboutMy aside,
+.aboutMy .leftBar{
+    padding-top: 50px;
+}
+
+.aboutMy .leftBar span{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.aboutMy .leftBar{
+    display: flex;
+    flex-direction: column;
+    font-size: 2vmin;
+}
+
+.aboutMy .leftBar a{
+    font-size: 1vmax;
+    color: #fff;
+}
+
+.aboutMy .leftBar p, h1, ul li{
+    line-height: 1.8em;
+}
+
+.aboutMy aside{
+    align-self: flex-start;
+}
+
+.aboutMy .leftBar h1{
+    padding: 30px 0;
+}
+
+.aboutMy .leftBar b{
+    display: flex;
+    font-size: 5vmin;
+    color: #FF1717;
+}
+
+.aboutMy main{
+    margin: 0;
+}
+
+.aboutMy main ul li{
+    font-size: 2vmin;
+}

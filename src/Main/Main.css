@@ -1,0 +1,36 @@
+.App {
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.App header{
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+  font-size: 2vmin;
+}
+.App header a{
+  color: #fff;
+}
+.App main{
+  width: 100%;
+  margin-top: 20vh;
+}
+.App main span{
+  color: #1f1f1f;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16vmin;
+  position: relative;
+}
+.App main span::after{
+  content: '';
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  margin-left: 60px;
+  position: absolute;
+  top: 90px
+}
