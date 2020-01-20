@@ -1,4 +1,4 @@
-.page404{
+.myWork{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -7,13 +7,19 @@
     flex-direction: column;
 }
 
-.page404 span{
+.myWork span{
     animation: entry-1s infinite 4s;
     font-size: 5vmax;
 }
 
-.page404 aside{
-    margin-top: 20%;
+.myWork ul{
+    list-style: none;
+    font-size: 10vmin;
+    cursor: pointer;
+}
+
+.myWork aside{
+    margin-top: 5%;
     opacity: .5;
 }
 

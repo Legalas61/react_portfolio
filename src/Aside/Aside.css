@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    min-height: 70px;
   }
   
   .App aside .contact,
@@ -10,11 +11,13 @@
     justify-content: space-between;
     width: 40%;
   }
+
   .App aside  a{
     color: #fff;
     position: relative;
     font-size: 2vmin;
     padding: 3%;
+    min-width: 100px;
   }
   
   .App aside a::before{
@@ -24,22 +27,33 @@
     height: 1px;
     background-color: #fff;
   }
+
   .App aside a:hover::before{
     top: 45px;
     width: 100%;
-    transition: top .4s;
-    transition: .4s width;
+    animation: link-hover .4s forwards;
   }
 
   @keyframes open{
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes link-hover{
     from{
-      transform: scale(0);
+      width: 40px;
     }
     to{
-      transform: scale(1);
+      width: 80px;
     }
   }
 
   span, a, p, h1, b, li{
-    animation: open .8s;
+    animation: open 1s cubic-bezier(.645,.045,.355,1);
   }

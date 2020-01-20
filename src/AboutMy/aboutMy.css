@@ -38,12 +38,17 @@
 
 .aboutMy .leftBar b{
     display: flex;
-    font-size: 5vmin;
-    color: #FF1717;
+    font-size: 6vmin;
+    color: rgb(34, 33, 33);
+    padding-bottom: 15px;
 }
 
 .aboutMy main{
     margin: 0;
+}
+
+.aboutMy main ul {
+    margin: 10px auto;
 }
 
 .aboutMy main ul li{

@@ -1,19 +1,26 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom'
-import Other from './404/404'
-import MyWork from './MyWork/myWork'
-import Main from './Main/Main'
-import AboutMy from './AboutMy/aboutMy'
+import logo from './logo.svg';
+import './App.css';
 
-export default function App() {
+function App() {
   return (
     <div className="App">
-           <Switch>
-            <Route exact path="/"  component={Main}/>
-            <Route exact path="/aboutMy"  component={AboutMy}/>
-            <Route exact path="/myWork"  component={MyWork}/>
-            <Route component={Other} />
-        </Switch>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
+
+export default App;
